@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>545</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #968c83;
+</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>381</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MV Boli</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #8db596;
+border: 1px solid #f0ece3;
+color: #f0ece3;
+padding: 7px;
+</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MV Boli</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: none;
+color: #f0ece3;</string>
+   </property>
+   <property name="wrapping">
+    <bool>false</bool>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="accelerated">
+    <bool>false</bool>
+   </property>
+   <property name="correctionMode">
+    <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
+   </property>
+   <property name="keyboardTracking">
+    <bool>false</bool>
+   </property>
+   <property name="date">
+    <date>
+     <year>2020</year>
+     <month>12</month>
+     <day>23</day>
+    </date>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::YearSection</enum>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="currentSectionIndex">
+    <number>2</number>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>40</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>WaitCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-left:1px solid black;
+border-right:1px solid black;
+color: #f0ece3;</string>
+   </property>
+   <property name="value">
+    <number>59</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+   <property name="textDirection">
+    <enum>QProgressBar::TopToBottom</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>381</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pb_addNote">
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #cbaf87;
+color: #f0ece3;
+border: none;
+padding:5px;</string>
+      </property>
+      <property name="text">
+       <string>Add Note</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pb_delNote">
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #cbaf87;
+color: #f0ece3;
+border: none;
+padding:5px;</string>
+      </property>
+      <property name="text">
+       <string>Delete Note</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pb_save">
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #cbaf87;
+color: #f0ece3;
+border: none;
+padding:5px;</string>
+      </property>
+      <property name="text">
+       <string>Save Tasks</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pb_delAll">
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #cbaf87;
+color: #f0ece3;
+border: none;
+padding:5px;</string>
+      </property>
+      <property name="text">
+       <string>Delete All Noties</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MV Boli</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #8db596;
+color: #f0ece3;
+border: 1px solid #f0ece3;</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>320</y>
+     <width>401</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>0</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MV Boli</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #f0ece3;</string>
+   </property>
+   <property name="text">
+    <string>Your Notice</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>520</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>© Copyright 2020. All Rights Reserved.</string>
+   </property>
+  </widget>
+  <zorder>dateEdit</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>line</zorder>
+  <zorder>label</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
